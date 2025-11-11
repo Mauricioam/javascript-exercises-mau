@@ -1,15 +1,22 @@
-const add = function (...nums) {
-  nums.reduce(function (valorAnterior, valorActual) {
-    return valorAnterior + valorActual;
-  });
+const add = function (a, b) {
+  return a + b;
 };
-const subtract = function () {};
+const subtract = function (a, b) {
+  return a - b;
+};
 
-const sum = function () {};
+const sum = function (array) {
+  if (!array.length) return 0;
+  return array.reduce((acc, current) => acc + current);
+};
 
-const multiply = function () {};
+const multiply = function (array) {
+  return array.reduce((acc, current) => acc * current);
+};
 
-const power = function () {};
+const power = function (a, b) {
+  return Math.pow(a, b);
+};
 
 const factorial = function () {};
 
